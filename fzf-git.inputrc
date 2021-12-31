@@ -1,7 +1,7 @@
 "\er": redraw-current-line
-"\C-g\C-f": "$(_gf)\e\C-e\er"
-"\C-g\C-b": "$(_gb)\e\C-e\er"
-"\C-g\C-t": "$(_gt)\e\C-e\er"
-"\C-g\C-h": "$(_gh)\e\C-e\er"
-"\C-g\C-r": "$(_gr)\e\C-e\er"
-"\C-g\C-s": "$(_gs)\e\C-e\er"
+"\C-g\C-f": "$(__fzf_git_files)\e\C-e\er"
+"\C-g\C-b": "$(__fzf_git_branches)\e\C-e\er"
+"\C-g\C-t": "$(__fzf_git_tags)\e\C-e\er"
+"\C-g\C-h": "$(__fzf_git_hashes)\e\C-e\er"
+"\C-g\C-r": "$(__fzf_git_remotes)\e\C-e\er"
+"\C-g\C-s": "$(__fzf_git_stashes)\e\C-e\er"

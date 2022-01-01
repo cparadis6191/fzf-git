@@ -6,7 +6,10 @@ __fzf_git_is_in_git_repo() {
 }
 
 __fzf_git_cmd() {
-  fzf --bind=ctrl-z:ignore "$@"
+  # Refer to
+  # https://github.com/junegunn/fzf/blob/master/shell/key-bindings.bash for
+  # more information about __fzfcmd.
+  $(__fzfcmd) --bind=ctrl-z:ignore "$@"
 }
 
 __fzf_git_files() {

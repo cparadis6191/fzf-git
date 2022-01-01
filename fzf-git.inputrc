@@ -1,7 +1,7 @@
 "\er": redraw-current-line
-"\C-g\C-f": " \C-b\C-k \C-u`__fzf_git_files`\e\C-e\er\C-a\C-y\C-h\C-e\e \C-y\ey\C-x\C-x\C-f"
-"\C-g\C-b": " \C-b\C-k \C-u`__fzf_git_branches`\e\C-e\er\C-a\C-y\C-h\C-e\e \C-y\ey\C-x\C-x\C-f"
-"\C-g\C-t": " \C-b\C-k \C-u`__fzf_git_tags`\e\C-e\er\C-a\C-y\C-h\C-e\e \C-y\ey\C-x\C-x\C-f"
-"\C-g\C-h": " \C-b\C-k \C-u`__fzf_git_hashes`\e\C-e\er\C-a\C-y\C-h\C-e\e \C-y\ey\C-x\C-x\C-f"
-"\C-g\C-r": " \C-b\C-k \C-u`__fzf_git_remotes`\e\C-e\er\C-a\C-y\C-h\C-e\e \C-y\ey\C-x\C-x\C-f"
-"\C-g\C-s": " \C-b\C-k \C-u`__fzf_git_stashes`\e\C-e\er\C-a\C-y\C-h\C-e\e \C-y\ey\C-x\C-x\C-f"
+"\C-g\C-f": " \C-b\C-k \C-u`_fzf_git_files`\e\C-e\er\C-a\C-y\C-h\C-e\e \C-y\ey\C-x\C-x\C-f"
+"\C-g\C-b": " \C-b\C-k \C-u`_fzf_git_branches`\e\C-e\er\C-a\C-y\C-h\C-e\e \C-y\ey\C-x\C-x\C-f"
+"\C-g\C-t": " \C-b\C-k \C-u`_fzf_git_tags`\e\C-e\er\C-a\C-y\C-h\C-e\e \C-y\ey\C-x\C-x\C-f"
+"\C-g\C-h": " \C-b\C-k \C-u`_fzf_git_hashes`\e\C-e\er\C-a\C-y\C-h\C-e\e \C-y\ey\C-x\C-x\C-f"
+"\C-g\C-r": " \C-b\C-k \C-u`_fzf_git_remotes`\e\C-e\er\C-a\C-y\C-h\C-e\e \C-y\ey\C-x\C-x\C-f"
+"\C-g\C-s": " \C-b\C-k \C-u`_fzf_git_stashes`\e\C-e\er\C-a\C-y\C-h\C-e\e \C-y\ey\C-x\C-x\C-f"

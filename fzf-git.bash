@@ -36,7 +36,7 @@ _fzf_git_tags() {
     --preview 'git show --color=always {}'
 }
 
-_fzf_git_hashes() {
+_fzf_git_log() {
   __fzf_git_is_in_git_repo || return
   git log --date=short --format="%C(green)%C(bold)%cd %C(auto)%h%d %s (%an)" --graph --color=always |
   __fzf_git_cmd --ansi --no-sort --reverse --multi --bind 'ctrl-s:toggle-sort' \

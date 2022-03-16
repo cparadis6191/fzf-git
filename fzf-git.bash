@@ -22,8 +22,8 @@ _fzf_git_files() {
 
 _fzf_git_branches() {
   __fzf_git_is_in_git_repo || return
-  git branch -a --color=always | grep -v '/HEAD\s' | sort |
-  __fzf_git_cmd --ansi --multi --tac --preview-window right:70% \
+  git branch -a --color=always --sort=-committerdate | grep -v '/HEAD\s' |
+  __fzf_git_cmd --ansi --multi --preview-window right:70% \
     --preview 'git log --oneline --graph --date=short --color=always --pretty="format:%C(auto)%cd %h%d %s" $(sed s/^..// <<< {} | cut -d" " -f1)' |
   sed 's/^..//' | cut -d' ' -f1 |
   sed 's#^remotes/##'

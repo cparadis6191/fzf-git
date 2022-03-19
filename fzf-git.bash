@@ -48,7 +48,7 @@ _fzf_git_log() {
 _fzf_git_remotes() {
   __fzf_git_is_in_git_repo || return
   git remote -v | awk '{print $1 "\t" $2}' | uniq |
-  __fzf_git_cmd --tac \
+  __fzf_git_cmd \
     --preview 'git log --oneline --graph --date=short --pretty="format:%C(auto)%cd %h%d %s" {1}' |
   cut -d$'\t' -f1
 }

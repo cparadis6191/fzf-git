@@ -23,7 +23,7 @@ _fzf_git_files() {
 _fzf_git_branches() {
   __fzf_git_is_in_git_repo || return
   git branch -a --color=always --sort=-committerdate | grep -v '/HEAD\s' |
-  __fzf_git_cmd --ansi --multi --preview-window right:70% \
+  __fzf_git_cmd --ansi --multi \
     --preview 'git log --oneline --graph --date=short --color=always --pretty="format:%C(auto)%cd %h%d %s" $(sed s/^..// <<< {} | cut -d" " -f1)' |
   sed 's/^..//' | cut -d' ' -f1 |
   sed 's#^remotes/##'
@@ -32,7 +32,7 @@ _fzf_git_branches() {
 _fzf_git_tags() {
   __fzf_git_is_in_git_repo || return
   git tag --sort -version:refname |
-  __fzf_git_cmd --multi --preview-window right:70% \
+  __fzf_git_cmd --multi \
     --preview 'git show --color=always {}'
 }
 

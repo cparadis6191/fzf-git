@@ -58,3 +58,8 @@ _fzf_git_stashes() {
   git stash list | __fzf_git_cmd --reverse -d: --preview 'git show --color=always {1}' |
   cut -d: -f1
 }
+
+_fzf_git_worktree() {
+  __fzf_git_is_in_git_repo || return
+  git worktree list --porcelain | grep '^worktree ' | cut -d' ' -f2 | __fzf_git_cmd --reverse --preview 'git -C {} status'
+}

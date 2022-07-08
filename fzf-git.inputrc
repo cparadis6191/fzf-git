@@ -5,3 +5,4 @@
 "\C-g\C-l": " \C-b\C-k \C-u`_fzf_git_log`\e\C-e\er\C-a\C-y\C-h\C-e\e \C-y\ey\C-x\C-x\C-f"
 "\C-g\C-r": " \C-b\C-k \C-u`_fzf_git_remotes`\e\C-e\er\C-a\C-y\C-h\C-e\e \C-y\ey\C-x\C-x\C-f"
 "\C-g\C-s": " \C-b\C-k \C-u`_fzf_git_stashes`\e\C-e\er\C-a\C-y\C-h\C-e\e \C-y\ey\C-x\C-x\C-f"
+"\C-g\C-w": " \C-b\C-k \C-u`_fzf_git_worktree`\e\C-e\er\C-a\C-y\C-h\C-e\e \C-y\ey\C-x\C-x\C-f"

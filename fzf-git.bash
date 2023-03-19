@@ -1,7 +1,3 @@
-__fzf_git_is_in_git_repo() {
-	git rev-parse HEAD > /dev/null 2>&1
-}
-
 __fzf_git_cmd() {
 	# Refer to
 	# https://github.com/junegunn/fzf/blob/master/shell/key-bindings.bash for
@@ -10,7 +6,7 @@ __fzf_git_cmd() {
 }
 
 _fzf_git_worktree() {
-	__fzf_git_is_in_git_repo || return 1
+	_fzf_git_check || return 1
 
 	git worktree list --porcelain |
 		grep '^worktree ' |

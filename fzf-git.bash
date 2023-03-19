@@ -12,5 +12,10 @@ __fzf_git_cmd() {
 _fzf_git_worktree() {
 	__fzf_git_is_in_git_repo || return 1
 
-	git worktree list --porcelain | grep '^worktree ' | cut -d' ' -f2 | __fzf_git_cmd --reverse --preview 'git -C {} status'
+	git worktree list --porcelain |
+		grep '^worktree ' |
+		cut -d' ' -f2 |
+		__fzf_git_cmd \
+		--reverse \
+		--preview 'git -C {} status'
 }

@@ -13,5 +13,6 @@ _fzf_git_worktree() {
 		cut -d' ' -f2 |
 		__fzf_git_fzf \
 		--reverse \
-		--preview 'git -C {} status'
+		--preview 'git -C {} status' \
+		--prompt '👷🌲 Worktrees> '
 }

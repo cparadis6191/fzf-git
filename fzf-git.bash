@@ -10,7 +10,7 @@ _fzf_git_worktree() {
 
 	git worktree list --porcelain |
 		grep '^worktree ' |
-		cut -d' ' -f2 |
+		cut --delimiter=' ' --fields=2 |
 		__fzf_git_fzf \
 		--reverse \
 		--preview 'git -C {} status' \

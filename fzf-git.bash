@@ -2,7 +2,7 @@ __fzf_git_fzf() {
 	# Refer to
 	# https://github.com/junegunn/fzf-git.sh/blob/main/README.md#customization
 	# for more information about _fzf_git_fzf.
-	_fzf_git_fzf --bind=ctrl-z:ignore "$@"
+	_fzf_git_fzf "$@"
 }
 
 _fzf_git_worktree() {

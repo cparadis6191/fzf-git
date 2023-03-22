@@ -12,7 +12,6 @@ _fzf_git_worktree() {
 		grep '^worktree ' |
 		cut --delimiter=' ' --fields=2 |
 		__fzf_git_fzf \
-		--reverse \
 		--preview 'git -C {} status' \
 		--prompt '👷🌲 Worktrees> '
 }

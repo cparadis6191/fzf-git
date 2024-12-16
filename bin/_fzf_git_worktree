@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+
+_fzf_git_worktree() {
+	__fzf_git_check || return 1
+
+	git worktree list --porcelain |
+		grep '^worktree ' |
+		cut --delimiter=' ' --fields=2 |
+		__fzf_git_fzf \
+		--preview 'git -C {} status' \
+		--prompt '👷🌲 Worktrees> '
+}
+
+_fzf_git_worktree "$@"

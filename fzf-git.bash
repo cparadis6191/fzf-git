@@ -1,8 +1,11 @@
+# Redefine this function to change the options
 __fzf_git_fzf() {
-	# Refer to
-	# https://github.com/junegunn/fzf-git.sh/blob/main/README.md#customization
-	# for more information about _fzf_git_fzf.
-	_fzf_git_fzf "$@"
+	fzf --height=50% --tmux 90%,70% \
+		--layout=reverse --multi --min-height=20 --border \
+		--border-label-pos=2 \
+		--color='header:italic:underline,label:blue' \
+		--preview-window='right,50%,border-left' \
+		--bind='ctrl-/:change-preview-window(down,50%,border-top|hidden|)' "$@"
 }
 
 _fzf_git_worktree() {
